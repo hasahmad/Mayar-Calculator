@@ -66,7 +66,7 @@ function chkAge(aDate) {
    * MS G2 Oct    = oct_2     = 2018-10       = 2008
    * MK Oct       = oct_3     = 2018-13       = 2005
    */
-  if ((today < current_yr_nov) && today >= createDate(today.getFullYear(), 01, 01))) {
+  if ((today < current_yr_nov) && today >= createDate(today.getFullYear(), 01, 01)) {
       let nov_1 = createDate(today.getFullYear() - 10, 11, 1);
       let nov_2 = createDate(today.getFullYear() - 13, 11, 1);
       let nov_3 = createDate(today.getFullYear() - 16, 11, 1);
