@@ -17,6 +17,7 @@ function createDate(y, m, d) {
  * For the Year 2018 - 2019, the Atfal Mayar (Groups) can be determined from the division below.
  * 
  * MAYAR & GROUP ---------------------- TIFL’S DATE OF BIRTH
+ * ----------------------------------------------------------
  * Mayar Saghir Group 1 --------------- Date of Birth is  from November 1, 2009 to October 31 2011
  * Mayar Saghir Group 2 --------------- Date of Birth is  from November 1, 2006 to October 31, 2009
  * Mayar Kabir ------------------------ Date of Birth is  from November 1, 2003 to October 31, 2006
@@ -89,22 +90,22 @@ function chkAge(aDate) {
    */
   switch (true) {
       case (aDate >= nov_1 && aDate <= oct_1): // Mayar Saghir Group 1
-          result = "MS G1";
+          result = "Tifl - Mayar Saghir Group 1";
           break;
       case (aDate >= nov_2 && aDate <= oct_2): // Mayar Saghir Group 2
-          result = "MS G2";
+          result = "Tifl - Mayar Saghir Group 2";
           break;
       case (aDate >= nov_3 && aDate <= oct_3): // Mayar Kabir
-          result = "MK";
+          result = "Tifl - Mayar Kabir";
           break;
       case (aDate >= oct_1): // Not yet Tifl
-          result = "N/T";
+          result = "Not Tifl yet";
           break;
       case (aDate <= nov_3): // Khadim
-          result = "K";
+          result = "Khadim";
           break;
       default:
-          result = "N/A"; // Don't know
+          result = "Invalid Input"; // Don't know
           break;
   }
 
