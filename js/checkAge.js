@@ -30,13 +30,7 @@ function parseDate(str) {
  * parameters:
  *   age -> New Date Object
  */
-function chkAge(aDate) {
-  console.log(aDate);
-  aDate = aDate.trim();
-  if (!parseDate) {
-      return "Invalid Input!!!";
-  }
-  
+function chkAge(aDate) { 
   var result = "";
   var today = new Date();
   var current_yr_nov = createDate(today.getFullYear(), 11, 01);
@@ -63,6 +57,14 @@ function chkAge(aDate) {
   let oct_s1 = createDate(today.getFullYear() - 8, 10, 31);
   let oct_s2 = createDate(today.getFullYear() - 10, 10, 31);
   let oct_k = createDate(today.getFullYear() - 13, 10, 31);
+  
+  console.log(aDate);
+  console.log(nov_s1);
+  console.log(nov_s2);
+  console.log(nov_k);
+  console.log(oct_s1);
+  console.log(oct_s2);
+  console.log(oct_k);
   
   /**
    * check if `today` is between Jan 1 to November 1 of this year, then ...
