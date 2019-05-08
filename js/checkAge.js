@@ -34,6 +34,7 @@ function chkAge(aDate) {
   var result = "";
   var today = new Date();
   var current_yr_nov = createDate(today.getFullYear(), 11, 01);
+  aDate.setDate(aDate.getDate()+1);
   
   /**
    * if `today` is between November 1 to Jan 1 of this year, then ...
