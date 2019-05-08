@@ -45,13 +45,13 @@ function chkAge(aDate) {
    * MK Oct       = oct_3     = 2017-12       = 2005
    */
   
-  let nov_s1 = createDate(today.getFullYear() - 9, 11, 1);
-  let nov_s2 = createDate(today.getFullYear() - 12, 11, 1);
-  let nov_k = createDate(today.getFullYear() - 15, 11, 1);
+  let nov_s1 = createDate(today.getFullYear() - 10, 11, 1);
+  let nov_s2 = createDate(today.getFullYear() - 13, 11, 1);
+  let nov_k = createDate(today.getFullYear() - 16, 11, 1);
 
-  let oct_s1 = createDate(today.getFullYear() - 7, 10, 31);
-  let oct_s2 = createDate(today.getFullYear() - 9, 10, 31);
-  let oct_k = createDate(today.getFullYear() - 12, 10, 31);
+  let oct_s1 = createDate(today.getFullYear() - 8, 10, 31);
+  let oct_s2 = createDate(today.getFullYear() - 10, 10, 31);
+  let oct_k = createDate(today.getFullYear() - 13, 10, 31);
   
   /**
    * check if `today` is between Jan 1 to November 1 of this year, then ...
