@@ -10,6 +10,11 @@ function createDate(y, m, d) {
   return new Date(`${y}-${m}-${d}`);
 }
 
+function parseDate(str) {
+  // 2019-11-01
+  return str.match(/^(\d{4})-(\d{1,2})-(\d{1,2})$/);
+}
+
 /**
  * chkAge
  * Returns whether the given age is a Tifl and in Mayar or Khadim or not.
@@ -26,6 +31,11 @@ function createDate(y, m, d) {
  *   age -> New Date Object
  */
 function chkAge(aDate) {
+  aDate = aDate.trim();
+  if (!parseDate) {
+      return "Invalid Input!!!";
+  }
+  
   var result = "";
   var today = new Date();
   var current_yr_nov = createDate(today.getFullYear(), 11, 01);
