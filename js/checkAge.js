@@ -31,6 +31,7 @@ function parseDate(str) {
  *   age -> New Date Object
  */
 function chkAge(aDate) {
+  console.log(aDate);
   aDate = aDate.trim();
   if (!parseDate) {
       return "Invalid Input!!!";
