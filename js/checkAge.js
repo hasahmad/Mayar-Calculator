@@ -53,6 +53,13 @@ function chkAge(aDate) {
   let oct_s2 = createDate(today.getFullYear() - 10, 10, 31);
   let oct_k = createDate(today.getFullYear() - 13, 10, 31);
   
+  console.log(nov_s1);
+  console.log(nov_s2);
+  console.log(nov_k);
+  console.log(oct_s1);
+  console.log(oct_s2);
+  console.log(oct_k);
+  
   /**
    * check if `today` is between Jan 1 to November 1 of this year, then ...
    * 
