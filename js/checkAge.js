@@ -45,13 +45,13 @@ function chkAge(aDate) {
    * MK Oct       = oct_3     = 2017-12       = 2005
    */
   
-  let nov_1 = createDate(today.getFullYear() - 9, 11, 1);
-  let nov_2 = createDate(today.getFullYear() - 12, 11, 1);
-  let nov_3 = createDate(today.getFullYear() - 15, 11, 1);
+  let nov_s1 = createDate(today.getFullYear() - 9, 11, 1);
+  let nov_s2 = createDate(today.getFullYear() - 12, 11, 1);
+  let nov_k = createDate(today.getFullYear() - 15, 11, 1);
 
-  let oct_1 = createDate(today.getFullYear() - 7, 10, 31);
-  let oct_2 = createDate(today.getFullYear() - 9, 10, 31);
-  let oct_3 = createDate(today.getFullYear() - 12, 10, 31);
+  let oct_s1 = createDate(today.getFullYear() - 7, 10, 31);
+  let oct_s2 = createDate(today.getFullYear() - 9, 10, 31);
+  let oct_k = createDate(today.getFullYear() - 12, 10, 31);
   
   /**
    * check if `today` is between Jan 1 to November 1 of this year, then ...
@@ -90,19 +90,19 @@ function chkAge(aDate) {
    * (date >= `2002-11-01` = true) & (date <= `2005-11-01` = true) = true
    */
   switch (true) {
-      case (aDate >= nov_1 && aDate <= oct_1): // Mayar Saghir Group 1
+      case (aDate >= nov_s1 && aDate <= oct_s1): // Mayar Saghir Group 1
           result = "Tifl - Mayar Saghir Group 1";
           break;
-      case (aDate >= nov_2 && aDate <= oct_2): // Mayar Saghir Group 2
+      case (aDate >= nov_s2 && aDate <= oct_s2): // Mayar Saghir Group 2
           result = "Tifl - Mayar Saghir Group 2";
           break;
-      case (aDate >= nov_3 && aDate <= oct_3): // Mayar Kabir
+      case (aDate >= nov_k && aDate <= oct_k): // Mayar Kabir
           result = "Tifl - Mayar Kabir";
           break;
-      case (aDate >= oct_1): // Not yet Tifl
+      case (aDate >= oct_s1): // Not yet Tifl
           result = "Not Tifl yet";
           break;
-      case (aDate <= nov_3): // Khadim
+      case (aDate <= nov_k): // Khadim
           result = "Khadim";
           break;
       default:
